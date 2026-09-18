@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>נבואת הבינה המלאכותית: הארי פוטר</title>
+    
+    <!-- טעינת פונטים ויקטוריאניים מ-Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+
+    <style>
+        /* --- עיצוב בסיסי --- */
+        body {
+            /* רקע של קלף ישן וכהה */
+            background-color: #1a1a1a;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-parchment.png');
+            color: #e0e0e0;
+            font-family: 'IM Fell English SC', serif; /* הפונט המיוחד */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden; /* למניעת פסי גלילה מיותרים באפקטים */
+        }
+
+        /* --- התיבה המרכזית (הקלף) --- */
+        .parchment-container {
+            background: rgba(255, 252, 235, 0.05); /* רקע בהיר עדין מאוד */
+            padding: 50px;
+            border-radius: 15px;
+            border: 2px solid #5c4033; /* גבול בצבע חום-עץ */
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7), inset 0 0 50px rgba(92, 64, 51, 0.2);
+            max-width: 600px;
+            width: 90%;
+            position: relative;
+            transform: rotate(-1deg); /* הטיה קלה למראה טבעי */
+            animation: float 6s ease-in-out infinite; /* אנימציית ציפה */
+        }
+
+        /* --- כותרת ראשית מנצנצת --- */
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+            color: #d4af37; /* צבע זהב */
+            text-shadow: 0 0 10px #ffdf00, 0 0 20px #ffdf00, 0 0 30px #d4af37;
+            animation: glow 2s ease-in-out infinite alternate; /* אנימציית ניצנוץ */
+            letter-spacing: 2px;
+        }
+
+        /* --- כותרת משנה --- */
+        h2 {
+            font-size: 1.5rem;
+            color: #bfa071;
+            margin-top: 0;
+            font-style: italic;
+        }
+
+        /* --- פסקת טקסט --- */
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 30px 0;
+            color: #ccc;
+        }
+
+        /* --- כפתור קסום --- */
+        .magic-button {
+            background: #4a0404; /* אדום יין כהה */
+            color: #d4af37;
+            border: 2px solid #d4af37;
+            padding: 15px 30px;
+            font-family: 'IM Fell English SC', serif;
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+            border-radius: 5px;
+        }
+
+        .magic-button:hover {
+            background: #d4af37;
+            color: #4a0404;
+            box-shadow: 0 0 20px #ffdf00, 0 0 30px #ffdf00;
+            transform: scale(1.05);
+        }
+
+        /* --- אנימציות CSS --- */
+
+        /* אנימציית ציפה לקלף */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(-1deg); }
+            50% { transform: translateY(-15px) rotate(1deg); }
+        }
+
+        /* אנימציית ניצנוץ לכותרת */
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #ffdf00, 0 0 20px #ffdf00; }
+            to { text-shadow: 0 0 20px #ffdf00, 0 0 30px #d4af37, 0 0 40px #d4af37; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="parchment-container">
+        <h1>הנבואה העתיקה</h1>
+        <h2>פרויקט למידת מכונה</h2>
+        
+        <p>
+            ממעמקי הצינוק של הוגוורטס, אלגוריתמים עתיקים מתעוררים לחיים.<br>
+            האם הבינה המלאכותית מסוגלת לחזות לאיזה בית תשתייכו?<br>
+            או שמא היא תחשוף את סודותיו של הלורד וולדמורט עצמו?<br>
+            רק אלו המעזים להריץ את הקוד יגלו את האמת.
+        </p>
+
+        <button class="magic-button" onclick="alert('הקסם מתחיל... בקרוב בחיבור ל-API!')">גלי את הגורל</button>
+    </div>
+
+</body>
+</html>
